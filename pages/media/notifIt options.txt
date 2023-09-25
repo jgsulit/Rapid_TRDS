@@ -1,0 +1,100 @@
+function not(){
+notif({
+
+// success, error, warning, info
+type: "info",
+
+// Default size
+width = 400,
+height = 60,
+
+// Default position
+position = "right", // left, center, right, bottom
+
+// Default autohide
+autohide = true,
+
+// Default msg
+msg = "",
+
+// Default opacity (Only Chrome, Firefox and Safari)
+opacity = 1,
+
+multiline: 0,
+fade: 0,
+bgcolor: "",
+color: "",
+timeout: 5000,
+
+// The z-index of the notification
+zindex: null,
+
+// The offset in pixels from the edge of the screen
+offset: 0,
+
+// Callback
+callback: null,
+
+clickable: false,
+
+clickable: false,
+animation: 'slide'
+
+});
+}
+
+function notif_success(){
+	notif({
+		msg: "<strong>Status: </strong> Transaction Success!",
+		type: "success",
+		// bgcolor: "#2c3e50",
+		position: "center",
+		timeout: "3000"
+	});
+}
+
+function notif_error(){
+	notif({
+		msg: "<strong>Status: </strong> Transaction Error!",
+		type: "error",
+		position: "center",
+		timeout: "3000"
+	});
+}
+
+function notif_warning(){
+	notif({
+		msg: "<strong>Status: </strong> Transaction Success!",
+		type: "warning",
+		position: "center",
+		timeout: "3000"
+	});
+}
+
+function notif_warning_unselect(){
+	notif({
+		msg: "<strong>System: </strong> Please select a record to update!",
+		type: "warning",
+		position: "center",
+		timeout: "3000"
+	});
+}
+
+function notif_info(){
+	notif({
+		msg: "<strong>Status: </strong> Transaction Success!",
+		type: "info",
+		position: "center",
+		timeout: "3000"
+	});
+}
+
+function notif_error_addpr(){
+	notif({
+		msg: "<strong>Status: </strong> Item Code Not Found!",
+		type: "error",
+		position: "center",
+		timeout: "5000"
+	});
+}
+

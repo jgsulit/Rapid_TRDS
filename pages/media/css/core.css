@@ -1,0 +1,125 @@
+
+	/* THIS IS THE CORE CSS*/
+
+	.navbar-custom .navbar-toggle {text-align: center;}
+	
+	.rowMargin {
+		padding-top: 5px;
+	}
+	
+	.set_span_color {
+		background-color: #2d89ef;
+		border-color: #2d89ef;
+		color: #FFF;
+	}
+	
+	#left-pane{
+		padding:10px;
+		padding-top:5px;
+		padding-right:5px;
+		padding-bottom:5px;
+	}
+
+	.fontstyle{
+		font-size: 12px;
+		padding-right: 5px;
+	}
+
+	#item_load{
+		padding: 5px; 
+		<!--background-color: #f36f36;-->
+		border-color: #f36f36;
+	}
+	
+	.form-control{
+		padding-top:5px; 
+		padding-bottom: 5px; 
+		height: 5%;
+		border-radius: 0px;
+	}
+	
+	.td {
+		padding-top:5px;
+		padding-bottom: 5px;
+	}
+	
+	#navbar2 {
+
+		background: #ffffff; /* fallback for old browsers */
+		/* background: -webkit-linear-gradient(to left, #3a7bd5, #00d2ff); 
+		background: linear-gradient(to left, #3a7bd5, #00d2ff);
+		 */
+	}
+	
+	#navbar {
+		background-color: #ffffff;
+		
+	}
+
+	ul.nav {
+		color: #000000 !important; 
+	}
+	
+	ul.nav a:hover { 
+
+		/* color: #00d2ff !important;  */
+		color: #000000 !important; 
+		
+	}
+	
+	.link {
+	outline: none;
+	background-image: -webkit-radial-gradient(10% 80%, circle, #56ab2f, transparent);
+	position: relative;
+	font-size: 20px;
+	line-height: 1;
+	color: #FFF;
+	display: inline-block;
+	padding: 15px;
+	width: 50%;
+	}
+
+	.link--kukuri {
+	font-weight: 900;
+	overflow: hidden;
+	line-height: 0.75;
+	color: #fff;
+	}
+
+	.link--kukuri:hover {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.link--kukuri::after {
+		content: '';
+		position: absolute;gi
+		width: 100%;
+		top: 50%;
+		margin-top: -8px;
+		right: 0;
+		background: #fff;
+		transform: translate3d(-100%,0,0);
+		transition: transform 0.1s;
+		transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	}
+
+	.link--kukuri:hover::after {
+		transform: translate3d(100%,0,0);
+	}
+
+	.link--kukuri::before {
+		content: attr(data-letters);
+		position: absolute;
+		z-index: 2;
+		overflow: hidden;
+		color: green;
+		white-space: nowrap;
+		width: 0%;
+		transition: width 0.4s 0.3s;
+	}
+
+	.link--kukuri:hover::before {
+		width: 100%;
+	}
+	
